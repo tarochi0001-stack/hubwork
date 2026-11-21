@@ -83,4 +83,15 @@ Credits go to: running agent fleets (Claude, OpenAI and Gemini APIs) for develop
 
 ## 10. Ask
 
-AI and cloud credits to run agent fleets for development and evaluation over 6 months, plus accelerator mentoring on developer go-to-market. *(Founder background: to be added.)* Open to pre-seed conversations.
+AI and cloud credits to run agent fleets for development and evaluation over 6 months, plus accelerator mentoring on developer go-to-market. Open to pre-seed conversations.
+
+## 11. Team
+
+**Cao Duc Chung, solo founder (full-time).**
+- Bachelor of Business Administration, University of Economics.
+- 10 years in sales at MobiFone (Vietnam telecom operator), specialising in developing IT projects for business customers: scoping needs, selling and coordinating delivery.
+- Last 3 years: 100% of time on researching and learning AI, now 100% dedicated to AI products for work and education.
+- Mission: products that serve everyday needs for ordinary people.
+- Why this founder: a sales and project-delivery background (customer discovery, B2B/B2B2C channels such as schools and telecom partners) paired with hands-on AI building, shipping production code through agent orchestration rather than a large engineering team.
+
+Gap we know: no second technical co-founder; HubWork itself is the leverage that lets one founder run 10+ projects.
