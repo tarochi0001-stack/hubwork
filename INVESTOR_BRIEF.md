@@ -1,6 +1,6 @@
 # HubWork — Investor Brief
 
-*November 2026 · Founder: Cao Duc Chung (Vietnam) · hello@aicollabx.org · [work.aicollabx.org](https://work.aicollabx.org)*
+*v2 · 21 Nov 2026 · Founder: Cao Duc Chung (Vietnam) · hello@aicollabx.org · [work.aicollabx.org](https://work.aicollabx.org)*
 
 ## 1. One line
 
@@ -16,7 +16,7 @@ AI agents (Claude Code, Codex, Gemini CLI, Hermes…) can now write and run real
 - **No oversight:** it's unclear what's running, what's waiting on the human, and what's risky.
 - **Cost:** each provider has its own quota. Without routing, you pay for the top model on routine work.
 
-Existing tools (issue trackers, agent frameworks) manage either *humans* or *one agent*. None of them run a **fleet of heterogeneous agents across projects** day to day.
+Most existing tools are built around either *human* task tracking or *one agent / one framework*. Our hypothesis is that a vendor-neutral control layer for **many heterogeneous agents across projects** is missing for solo founders and small teams; see the competition table below.
 
 ## 3. The product (working today)
 
@@ -31,21 +31,31 @@ Existing tools (issue trackers, agent frameworks) manage either *humans* or *one
 | **Safety levels** | `AUTO=code / ops / live / full`. Money, keys, live risk and deletion always need the human |
 | **Reports** | Status board, "waiting on you" list, token/quota ledger, weekly report, Telegram notifications |
 
-## 4. Traction (real usage, founder as user #1)
+## 4. Traction (internal use only, founder is the sole user; counted 21 Nov 2026 from the hub repo and ledger)
 
 - **In daily use since October 2026** to run **10+ projects**: an edtech product ([HubStudy](https://github.com/tarochi0001-stack/hubstudy)), smart-home, data-collection and research automation.
 - **350+ task cards** processed, **2,800+ commits** to the hub since Oct 19, 2026, **~1,300 dispatcher ledger events**.
 - Coordinates **Claude Code, Codex, Gemini CLI, Hermes and other agents** in one queue.
 - ~24k lines of Python, 110+ test files.
-- **HubStudy (~34k lines) was largely built by agents coordinated through HubWork.** That is the strongest proof that the system works.
+- **HubStudy (~34k lines of Python/JS) was largely built by agents coordinated through HubWork.** This is our main evidence. We have no external users yet.
+- How we counted: `ls queue | wc -l`, `git log | wc -l` on the hub repo, and line counts of `coordinator.jsonl` and `hubctl/*.py`. The repo is private; we can show a screen-share audit on request.
 
-## 5. Why now
+## 5. Competition
+
+| Alternative | Overlap | Our angle (hypothesis) |
+|---|---|---|
+| Linear / Jira / Plane | Task tracking | Built for humans. We add leases, agent dispatch and quota recovery |
+| GitHub Copilot coding agent, Devin, OpenHands | A single coding agent | We coordinate *many* of them across vendors |
+| CrewAI / LangGraph | Multi-agent frameworks (code-level) | Ops layer for existing CLI agents, no rewrite needed |
+| GitHub Actions + Slack/Telegram + logs | DIY stack | One opinionated system with safety levels and memory |
+
+## 6. Why now
 
 - Coding agents crossed the "useful" threshold in 2025–2026. Solo founders and small teams now run several agents in parallel.
 - Model providers sell quota and credits per vendor, so cost-aware routing across vendors is becoming a real need.
 - Reliable, safe autonomy (who may deploy, spend or touch keys) is the main blocker for companies adopting agents.
 
-## 6. Business model (planned)
+## 7. Business model (hypotheses, not validated)
 
 | Phase | Offer |
 |---|---|
@@ -53,17 +63,17 @@ Existing tools (issue trackers, agent frameworks) manage either *humans* or *one
 | 2. Pro | Hosted dashboard, team leases, cross-machine sync, alerts: ~$15–30 per seat per month |
 | 3. Team / agency | Policy controls, audit log, cost reporting across providers |
 
-## 7. Roadmap & use of credits
+## 8. Roadmap & use of credits
 
 | Next 6 months | Milestone |
 |---|---|
 | Month 1–2 | Web dashboard; one-command install for other developers |
-| Month 3–4 | 20 external alpha users (developer communities in Vietnam and SEA) |
+| Month 3–4 | 20 external alpha users. Success: ≥40% active in week 4; ≥70% of jobs completed without manual rescue; cost per job reported |
 | Month 5–6 | Hosted multi-user beta; pricing test |
 
 Credits go to: running agent fleets (Claude, OpenAI and Gemini APIs) for development and evaluation, hosting the dashboard, and CI.
 
-## 8. Risks & mitigation
+## 9. Risks & mitigation
 
 | Risk | Mitigation |
 |---|---|
@@ -71,6 +81,6 @@ Credits go to: running agent fleets (Claude, OpenAI and Gemini APIs) for develop
 | Security of autonomous agents | Safety levels built in, secrets never stored in memory, human approval for risky actions |
 | Solo founder | The product itself multiplies one founder's output (see HubStudy) |
 
-## 9. Ask
+## 10. Ask
 
-AI and cloud credits plus accelerator support to package HubWork for external users. Open to pre-seed conversations.
+AI and cloud credits to run agent fleets for development and evaluation over 6 months, plus accelerator mentoring on developer go-to-market. *(Founder background: to be added.)* Open to pre-seed conversations.
