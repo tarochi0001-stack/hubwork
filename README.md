@@ -4,7 +4,7 @@
 
 **An operating hub for running many projects with many AI coding agents — shared memory, task cards, leases and an automatic dispatcher.**
 
-[🌐 Website](https://study.aicollabx.org) · [How it works](#how-it-works) · [Roadmap](#roadmap)
+[🌐 Website](https://work.aicollabx.org) · [📄 Investor brief](INVESTOR_BRIEF.md) · [How it works](#how-it-works) · [Roadmap](#roadmap)
 
 ![status](https://img.shields.io/badge/status-in%20daily%20use-blue) ![agents](https://img.shields.io/badge/agents-Claude%20Code%20%7C%20Codex%20%7C%20Gemini%20CLI%20%7C%20Hermes-orange) ![lang](https://img.shields.io/badge/python-3.14-green)
 
@@ -45,7 +45,7 @@ HubWork is a file-based "brain" plus a CLI (`hub`) that every agent shares:
 
 ## Status
 
-🚧 **In daily use** by the founder to run 6+ projects (edtech, research, automation) with multiple agents. Source is private for now; this repo hosts public docs and the roadmap.
+🚧 **In daily use** by the founder to run 10+ projects (edtech, smart-home, research automation); 350+ task cards, 2,800+ commits since Oct 2026 with multiple agents. Source is private for now; this repo hosts public docs and the roadmap.
 
 ## Roadmap
 
@@ -58,4 +58,4 @@ HubWork is a file-based "brain" plus a CLI (`hub`) that every agent shares:
 
 ## Contact
 
-Cao Duc Chung — 🌐 [aicollabx.org](https://study.aicollabx.org)
+Cao Duc Chung — ✉️ hello@aicollabx.org — 🌐 [work.aicollabx.org](https://work.aicollabx.org)
